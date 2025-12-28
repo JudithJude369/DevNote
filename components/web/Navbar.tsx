@@ -4,7 +4,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export function Navbar() {
   return (
-    <nav className="w-full  py-5 flex items-center justify-between">
+    <nav className="w-full  py-5 flex items-center justify-between px-6">
       <div className="flex items-center gap-8 ">
         <Link href="/">
           <h1 className="text-3xl font-bold">
@@ -25,7 +25,7 @@ export function Navbar() {
         </div>
       </div>
 
-      <div>
+      <div className="flex gap-4">
         <Link className={buttonVariants()} href="/auth/sign-up">
           Sign up
         </Link>
